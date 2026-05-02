@@ -5,11 +5,11 @@ import { FaPlay } from "react-icons/fa";
 const Banner = () => {
     return (
         <div>
-            <div className="hero bg-base-200 min-h-screen px-[200px] py-[85px]">
+            <div className="hero bg-base-200 min-h-screen md:px-[200px] md:py-[85px] px-[20px] py-[10px]">
   <div className="hero-content flex-col lg:flex-row-reverse">
         <img
       src="/assets/banner.png"
-      className="max-w-sm rounded-lg"
+      className="md:max-w-sm rounded-lg w-50%"
     />
     <div>
         <span className='border  bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent border-none p-[10px] rounded-full  bg-[#E1E7FF]'> <FaRegDotCircle /> New: AI-Powered Tools Available</span>
@@ -28,17 +28,17 @@ Watch Demo</button>
   </div>
 </div>
 
-<div className='bg-gradient-to-r from-blue-800 to-purple-900 text-white mx-[200px] py-[60px] flex'>
-<div className='mx-[125px] space-x-[12px]'>
-    <h1 className='text-5xl font-bold'>50K+</h1>
+<div className='bg-gradient-to-r from-blue-800 to-purple-900 text-white md:mx-[200px] md:py-[60px] px-[50px] py-[30px] flex'>
+<div>
+    <h1 className='md:text-5xl font-bold text-xl'>50K+</h1>
     <p>Active Users</p>
 </div>
-<div className='mx-[125px] space-x-[12px]'>
-    <h1 className='text-5xl font-bold'>200+</h1>
+<div>
+    <h1 className='md:text-5xl text-xl font-bold'>200+</h1>
     <p>Premium Tools</p>
 </div>
 <div className='mx-[125px] space-x-[12px]'>
-   <h1 className='text-5xl font-bold'>4.9</h1>
+   <h1 className='md:text-5xl text-xl font-bold'>4.9</h1>
     <p>Rating</p>
 </div>
 </div>

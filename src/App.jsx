@@ -3,13 +3,18 @@ import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import Tools from "./Components/Tools"
 
+const Promise=async()=>{
+  const res=await fetch('/public/Json.json')
+  return res.json();
+}
+const dataPromise=Promise()
 function App() {
 
   return (
     <>
      <Navbar></Navbar>
      <Banner></Banner>
-     <Tools></Tools>
+     <Tools dataPromise={dataPromise}></Tools>
      <Footer></Footer>
     </>
   )
